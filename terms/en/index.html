@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="robots" content="index, follow">
+<title>Terms of Service | Final Pick</title>
+<style>
+:root {
+  --bench: #0A0A0A;        /* 화면 바탕 */
+  --raised: #141312;       /* 표·카드 바탕 */
+  --high: #1E1C1A;         /* 눌림·표 머리 */
+  --hairline: #2B2826;     /* 구분선 */
+  --film: #F2F2F2;         /* 본문 */
+  --film-dim: #BDB8B2;     /* 보조 글자 */
+  --caption: #9E9891;      /* 작은 안내 */
+  --tape: #FF6A13;         /* 테이프 주황 — 제목 밑줄·링크·소제목 (바탕 대비 7.0:1) */
+  --rail: #3A1D0E;         /* 레일 녹 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bench);
+  color: var(--film);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 0 18px 64px;
+  border-top: 8px solid var(--rail);
+  overflow-wrap: anywhere;
+}
+/* 한국어만 낱말 단위로 줄을 바꾼다. 일본어에 걸면 문장 부호에서만 끊겨 줄이 들쭉날쭉해진다. */
+html:lang(ko) body { word-break: keep-all; }
+main { max-width: 760px; margin: 0 auto; padding-top: 28px; }
+h1 {
+  display: inline-block;
+  font-size: 1.6rem; line-height: 1.35; letter-spacing: -0.01em;
+  margin: 4px 0 18px; padding-bottom: 4px;
+  border-bottom: 3px solid var(--tape);
+}
+h2 { font-size: 1.12rem; line-height: 1.5; margin: 44px 0 12px; }
+h2::before {
+  content: ""; display: inline-block;
+  width: 0.9em; height: 0.42em; margin-right: 0.5em;
+  border-radius: 2px;
+  background: var(--tape);
+}
+h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--tape); }
+p { margin: 0 0 14px; }
+strong { font-weight: 700; }
+a { color: var(--tape); text-decoration: underline; text-underline-offset: 3px; }
+ul, ol { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+li > ul, li > ol { margin: 8px 0 0; }
+hr { border: none; border-top: 1px solid var(--hairline); margin: 32px 0; }
+code {
+  background: var(--high); color: var(--film);
+  padding: 1px 6px; border-radius: 3px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+.tw {
+  overflow-x: auto; margin: 0 0 22px;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 0.9rem; }
+th, td {
+  padding: 9px 12px; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--hairline); border-right: 1px solid var(--hairline);
+}
+th:last-child, td:last-child { border-right: none; }
+tbody tr:last-child td { border-bottom: none; }
+th { background: var(--high); font-weight: 700; white-space: nowrap; }
+.meta { color: var(--film-dim); font-size: 0.9rem; margin: 0 0 4px; }
+.langbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+.langbar a, .langbar span {
+  font-size: 0.85rem; line-height: 1.4; padding: 10px 14px; min-height: 44px; display: inline-flex; align-items: center;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised); color: var(--film); text-decoration: none;
+}
+.langbar .on { background: var(--tape); color: var(--bench); border-color: var(--tape); font-weight: 700; }
+.langbar .hop { margin-left: auto; border-style: dashed; }
+.langbar a:hover, .langbar a:focus { background: var(--high); }
+.cards { list-style: none; padding: 0; margin: 8px 0 0; }
+.cards li { margin: 0 0 14px; }
+.cards a {
+  display: block; padding: 14px 18px;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised);
+  color: var(--film); text-decoration: none;
+}
+.cards a:hover, .cards a:focus { background: var(--high); }
+.cards .t { font-weight: 700; }
+.cards .d { color: var(--film-dim); font-size: 0.85rem; }
+footer {
+  margin-top: 56px; padding-top: 18px; border-top: 2px dashed var(--hairline);
+  text-align: center; color: var(--caption); font-size: 0.8rem; line-height: 2;
+}
+@media (max-width: 480px) {
+  body { font-size: 15px; padding: 0 14px 56px; }
+  h1 { font-size: 1.38rem; }
+  .langbar .hop { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<nav class="langbar"><a href="../" lang="ko">한국어</a><span class="on">English</span><a href="../ja/" lang="ja">日本語</a><a class="hop" href="../../privacy/en/">Privacy Policy &rarr;</a></nav>
+<h1>Terms of Service</h1>
+<p><strong>Final Pick: Ideal Type Bracket</strong> (<code>com.hasegi.finalpick</code>)</p>
+<ul>
+<li>Effective date: November 17, 2026</li>
+<li>Last updated: November 17, 2026</li>
+</ul>
+<hr>
+<h2>Article 1 (Purpose)</h2>
+<p>These Terms set out the rights, obligations and responsibilities between Hasegi Inc. (the "Company") and users regarding the use of the mobile application "Final Pick: Ideal Type Bracket" (the "App").</p>
+<h2>Article 2 (Definitions)</h2>
+<ol>
+<li><strong>App</strong> — the mobile application "Final Pick" distributed by the Company through Google Play and the Apple App Store.</li>
+<li><strong>User</strong> — anyone who installs and uses the App. The App does not require sign-up or an account.</li>
+<li><strong>Fictional people</strong> — adult characters that do not exist, and their photos, made by the Company with a generative AI image service.</li>
+<li><strong>Bracket</strong> — one round of play (Round of 32, Today's 16, Round of 64) in which the user keeps choosing one of two fictional people until one is left.</li>
+<li><strong>App data</strong> — information created by the user's actions, such as a stopped bracket, the Collection, records, settings and Pro status, <strong>stored only on the user's device</strong>.</li>
+<li><strong>Challenge code</strong> — a short string, and its link, that holds bracket information so a friend can play the same bracket.</li>
+<li><strong>Pro</strong> — the in-app product (<code>finalpick_pro</code>) bought once through each store's payment system.</li>
+<li><strong>Rewarded ad</strong> — an ad the user chooses to watch to the end in exchange for opening one Round of 64.</li>
+</ol>
+<h2>Article 3 (Effect and Changes)</h2>
+<ol>
+<li>These Terms apply to every user who installs and uses the App.</li>
+<li>The Company may revise these Terms to the extent permitted by law.</li>
+<li>The Company will post the changes and the effective date on this page, and announce significant changes that are unfavorable to users at least 7 days in advance.</li>
+<li>Continuing to use the App after the effective date means you accept the revised Terms. If you do not agree, you may stop using and delete the App.</li>
+</ol>
+<h2>Article 4 (Service)</h2>
+<ol>
+<li>The App provides:
+<ul>
+<li>Round of 32: a bracket of 32 out of the 64 people in a group. No limit on how many you play.</li>
+<li>Today's 16: the same bracket for every user each day. Once a day, with an optional daily reminder.</li>
+<li>Round of 64: a bracket with all 64 people. Watching one rewarded ad opens one bracket; Pro users can open it any time.</li>
+<li>Taste report: the winner, the final four and the share of each style the user picked. It shows only the styles picked and makes no judgment about the user or any person.</li>
+<li>Collection, friend challenges (challenge code and taste match) and a result share card.</li>
+</ul>
+</li>
+<li>The App <strong>can be enjoyed without an internet connection</strong>. The photos of the fictional people are inside the App. Ads and downloading the list of hidden people need a connection.</li>
+<li>The App has no accounts, rankings, cloud saves, chat between users, photo uploads, or features that introduce or connect users with real people. <strong>The App is a game and does not connect you with real people.</strong></li>
+</ol>
+<h2>Article 5 (AI-generated Fictional People and Reports)</h2>
+<ol>
+<li>Everyone in the App is a fictional adult created with generative AI. They are not real people, and none were modeled on or made to look like a specific person such as a celebrity or influencer. This is shown in the first-launch notice, on match cards, on the result screen, on share cards and in the store description.</li>
+<li>If an image looks like a real person or makes you uncomfortable, you can report it in [Settings] &gt; [Ads &amp; reports] &gt; [Report image], or from the person's page in the Collection.</li>
+<li>After reviewing a report, the Company hides that person in the App <strong>within 48 hours</strong> and fills the place with another fictional person. Hiding takes effect when the device is online.</li>
+<li>A stopped bracket or challenge code that included a hidden person may not open; in that case the App offers a new bracket.</li>
+</ol>
+<h2>Article 6 (Changes and Suspension)</h2>
+<ol>
+<li>The Company may change the set of fictional people, how brackets work, and where, how often and how many times ads are shown, as needed for planning and operation.</li>
+<li>The Company may suspend all or part of the App:
+<ul>
+<li>where there is a substantial operational reason</li>
+<li>where laws or store policies change</li>
+<li>in cases of force majeure, such as natural disasters or outages at store, ad or hosting providers</li>
+</ul>
+</li>
+<li>If the service is permanently discontinued, the Company will announce the end date in advance on the store listing or on this page.</li>
+</ol>
+<h2>Article 7 (Disclaimer on App Data)</h2>
+<ol>
+<li>App data is <strong>stored only on the user's device</strong> and is not backed up to the Company's servers.</li>
+<li>The Company has no obligation to restore app data lost because of:
+<ul>
+<li>deleting the App, or clearing its data or cache in device settings</li>
+<li>loss, failure or reset of the device, or a change of device</li>
+<li>reinstalling the operating system, lack of storage, or device transfer tools that do not support the App</li>
+</ul>
+</li>
+<li>Pro stays with your store account and can be restored with Restore purchases in [Settings].</li>
+<li>The taste report and taste match are for fun; their numbers prove nothing and guarantee no particular result.</li>
+</ol>
+<h2>Article 8 (Advertising)</h2>
+<ol>
+<li>The App is free to download and is supported by advertising.</li>
+<li>No ads of any kind are shown during a bracket or the winner reveal. The App shows the following five kinds of ads. The intervals and counts below are as of the effective date and may change under Article 6.
+<ul>
+<li><strong>Banner ads</strong> — only at the bottom of Home and Collection.</li>
+<li><strong>Interstitial ads</strong> — only when leaving the result screen. None until two brackets have been completed; then at most once every two brackets, once every 5 minutes, and 3 times per session.</li>
+<li><strong>App open ads</strong> — only for users who have completed three or more brackets, when opening the App or returning after more than 2 hours away. At most once every 2 hours.</li>
+<li><strong>Rewarded ads</strong> — only when the user chooses "Watch an ad for one round" to open the Round of 64.</li>
+<li><strong>Native ads</strong> — only inside the exit confirmation dialog when closing the App on Android.</li>
+</ul>
+</li>
+<li>Ad content is provided by ad providers, and any transaction regarding advertised goods or services is between the advertiser and the user. The Company limits ad content to rating G and blocks sensitive ad categories. You can tell us about an inappropriate ad in [Settings] &gt; [Ads &amp; reports] &gt; [Report an ad].</li>
+</ol>
+<h2>Article 9 (In-app Product and Refunds)</h2>
+<ol>
+<li>The App's only in-app product is Pro (<code>finalpick_pro</code>), bought once (not a subscription).</li>
+<li>With Pro, <strong>no ads are shown and the Round of 64 can be opened any time without an ad.</strong> No other features or future content are promised. Round of 32 and Today's 16 are unlimited without Pro.</li>
+<li>Payment is made through Google Play Billing or the Apple App Store, and <strong>refunds follow each store's refund policy and procedures.</strong> The Company cannot cancel or refund payments on behalf of the stores.</li>
+<li>With the same store account, Pro can be restored with Restore purchases in [Settings] after changing devices or reinstalling.</li>
+</ol>
+<h2>Article 10 (User Obligations)</h2>
+<p>Users must not:</p>
+<ol>
+<li>use images of the fictional people as if they were real people (fake profiles, impersonation, deception and the like)</li>
+<li>copy or distribute images of the fictional people for commercial purposes, or use them as training material for other services</li>
+<li>reverse engineer, decompile or modify the App, or manipulate app data, ad conditions or Pro by abnormal means such as memory editing or automation tools</li>
+<li>interfere with the normal operation of the App or the ad system, or obtain unfair benefits</li>
+<li>infringe the intellectual property of the Company or the rights of others, or violate applicable laws</li>
+</ol>
+<p>The Company is not responsible if app data is damaged or the App does not work properly as a result of such acts, and may take measures under applicable law.</p>
+<h2>Article 11 (Intellectual Property)</h2>
+<ol>
+<li>All rights to the content in the App, including images of the fictional people, graphics, sound effects, music, text and code, belong to the Company or the rightful owners.</li>
+<li>Users are granted only the right to use the App for personal, non-commercial purposes and may not copy, distribute, transmit, adapt or sell the content without the Company's prior written consent.</li>
+<li>Sharing the result card made by the App for personal purposes, and non-commercial recording or streaming of gameplay, are allowed. Do not remove or cover the "AI-generated" mark on cards or screens.</li>
+<li>The licenses of the open-source software and fonts used in the App (FinalPick Body, a renamed subset based on Pretendard JP; Do Hyeon; Oswald; all under the SIL Open Font License 1.1) can be read in [Settings] &gt; [Open-source licenses].</li>
+</ol>
+<h2>Article 12 (Disputes)</h2>
+<ol>
+<li>These Terms are governed by and interpreted under the laws of the Republic of Korea.</li>
+<li>If a dispute arises, both parties will try in good faith to resolve it amicably.</li>
+<li>The competent court for disputes not resolved by consultation is determined under the Civil Procedure Act of Korea.</li>
+</ol>
+<h2>Article 13 (Contact)</h2>
+<p>Please send questions about using the App to the email below.</p>
+<ul>
+<li>Email — hasegi.cs@gmail.com</li>
+<li>Operator — Hasegi Inc. · Development</li>
+</ul>
+<footer>
+&copy; 2026 Hasegi Inc.<br>
+Development &middot; Contact <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>

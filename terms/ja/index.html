@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="robots" content="index, follow">
+<title>利用規約 | ファイナルピック</title>
+<style>
+:root {
+  --bench: #0A0A0A;        /* 화면 바탕 */
+  --raised: #141312;       /* 표·카드 바탕 */
+  --high: #1E1C1A;         /* 눌림·표 머리 */
+  --hairline: #2B2826;     /* 구분선 */
+  --film: #F2F2F2;         /* 본문 */
+  --film-dim: #BDB8B2;     /* 보조 글자 */
+  --caption: #9E9891;      /* 작은 안내 */
+  --tape: #FF6A13;         /* 테이프 주황 — 제목 밑줄·링크·소제목 (바탕 대비 7.0:1) */
+  --rail: #3A1D0E;         /* 레일 녹 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bench);
+  color: var(--film);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 0 18px 64px;
+  border-top: 8px solid var(--rail);
+  overflow-wrap: anywhere;
+}
+/* 한국어만 낱말 단위로 줄을 바꾼다. 일본어에 걸면 문장 부호에서만 끊겨 줄이 들쭉날쭉해진다. */
+html:lang(ko) body { word-break: keep-all; }
+main { max-width: 760px; margin: 0 auto; padding-top: 28px; }
+h1 {
+  display: inline-block;
+  font-size: 1.6rem; line-height: 1.35; letter-spacing: -0.01em;
+  margin: 4px 0 18px; padding-bottom: 4px;
+  border-bottom: 3px solid var(--tape);
+}
+h2 { font-size: 1.12rem; line-height: 1.5; margin: 44px 0 12px; }
+h2::before {
+  content: ""; display: inline-block;
+  width: 0.9em; height: 0.42em; margin-right: 0.5em;
+  border-radius: 2px;
+  background: var(--tape);
+}
+h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--tape); }
+p { margin: 0 0 14px; }
+strong { font-weight: 700; }
+a { color: var(--tape); text-decoration: underline; text-underline-offset: 3px; }
+ul, ol { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+li > ul, li > ol { margin: 8px 0 0; }
+hr { border: none; border-top: 1px solid var(--hairline); margin: 32px 0; }
+code {
+  background: var(--high); color: var(--film);
+  padding: 1px 6px; border-radius: 3px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+.tw {
+  overflow-x: auto; margin: 0 0 22px;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 0.9rem; }
+th, td {
+  padding: 9px 12px; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--hairline); border-right: 1px solid var(--hairline);
+}
+th:last-child, td:last-child { border-right: none; }
+tbody tr:last-child td { border-bottom: none; }
+th { background: var(--high); font-weight: 700; white-space: nowrap; }
+.meta { color: var(--film-dim); font-size: 0.9rem; margin: 0 0 4px; }
+.langbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+.langbar a, .langbar span {
+  font-size: 0.85rem; line-height: 1.4; padding: 10px 14px; min-height: 44px; display: inline-flex; align-items: center;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised); color: var(--film); text-decoration: none;
+}
+.langbar .on { background: var(--tape); color: var(--bench); border-color: var(--tape); font-weight: 700; }
+.langbar .hop { margin-left: auto; border-style: dashed; }
+.langbar a:hover, .langbar a:focus { background: var(--high); }
+.cards { list-style: none; padding: 0; margin: 8px 0 0; }
+.cards li { margin: 0 0 14px; }
+.cards a {
+  display: block; padding: 14px 18px;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised);
+  color: var(--film); text-decoration: none;
+}
+.cards a:hover, .cards a:focus { background: var(--high); }
+.cards .t { font-weight: 700; }
+.cards .d { color: var(--film-dim); font-size: 0.85rem; }
+footer {
+  margin-top: 56px; padding-top: 18px; border-top: 2px dashed var(--hairline);
+  text-align: center; color: var(--caption); font-size: 0.8rem; line-height: 2;
+}
+@media (max-width: 480px) {
+  body { font-size: 15px; padding: 0 14px 56px; }
+  h1 { font-size: 1.38rem; }
+  .langbar .hop { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<nav class="langbar"><a href="../" lang="ko">한국어</a><a href="../en/" lang="en">English</a><span class="on">日本語</span><a class="hop" href="../../privacy/ja/">プライバシーポリシー &rarr;</a></nav>
+<h1>利用規約</h1>
+<p><strong>ファイナルピック：理想のタイプトーナメント</strong> (<code>com.hasegi.finalpick</code>)</p>
+<ul>
+<li>施行日: 2026年11月17日</li>
+<li>最終改定日: 2026年11月17日</li>
+</ul>
+<hr>
+<h2>第1条(目的)</h2>
+<p>この規約は、Hasegi Inc.(以下「当社」)が提供するモバイルアプリ「ファイナルピック：理想のタイプトーナメント」(以下「アプリ」)の利用について、当社と利用者の権利、義務および責任を定めることを目的とします。</p>
+<h2>第2条(用語の定義)</h2>
+<ol>
+<li><strong>アプリ</strong> — 当社が Google Play と Apple App Store で配信するモバイルアプリ「ファイナルピック」をいいます。</li>
+<li><strong>利用者</strong> — アプリをインストールして利用するすべての方をいいます。アプリは会員登録やアカウントの作成を求めません。</li>
+<li><strong>架空の人物</strong> — 当社が生成AIの画像サービスで作成した、実在しない成人のキャラクターとその写真をいいます。</li>
+<li><strong>対戦</strong> — 架空の人物ふたりのうちひとりを選ぶことを続けて、最後のひとりを決める1回のあそび(32強、今日の16強、64強)をいいます。</li>
+<li><strong>アプリのデータ</strong> — 途中でやめた対戦、図鑑、記録、設定、Proの状態など、利用者の操作で作られ、<strong>利用者の端末の中だけに保存される情報</strong>をいいます。</li>
+<li><strong>挑戦コード</strong> — 友だちが同じ対戦を遊べるように、対戦の情報を入れた短い文字列とそのリンクをいいます。</li>
+<li><strong>Pro</strong> — アプリの中で各ストアの決済システムを通じて1回購入するアプリ内商品(<code>finalpick_pro</code>)をいいます。</li>
+<li><strong>リワード広告</strong> — 利用者が自分で選んで最後まで見ることで、64強を1回開ける広告をいいます。</li>
+</ol>
+<h2>第3条(規約の効力と変更)</h2>
+<ol>
+<li>この規約は、アプリをインストールして利用するすべての利用者に適用されます。</li>
+<li>当社は、関係法令に反しない範囲でこの規約を改定することがあります。</li>
+<li>改定するときは、このページで内容と施行日をお知らせし、利用者に不利な重要な変更は施行の7日前からお知らせします。</li>
+<li>改定後の施行日以降もアプリを使い続けた場合は、改定後の規約に同意したものとみなします。同意しない場合は、アプリの利用をやめて削除できます。</li>
+</ol>
+<h2>第4条(サービスの提供)</h2>
+<ol>
+<li>当社はアプリを通じて次のものを提供します。
+<ul>
+<li>32強: 性別ごとの64人のうち32人が登場する対戦。回数の制限はありません。</li>
+<li>今日の16強: 日付ごとに、すべての利用者に同じ組み合わせ。1日1回で、希望すれば毎日お知らせを受け取れます。</li>
+<li>64強: 64人全員が登場する対戦。リワード広告を1回見ると1回開き、Proの利用者はいつでも開けます。</li>
+<li>好みレポート: 優勝者、最後の4人、利用者が選んだスタイルの割合。選んだスタイルだけを示し、利用者や人物の性格や心理を判断しません。</li>
+<li>図鑑、友だちへの挑戦(挑戦コードと好みの一致率)、結果をシェアするカード。</li>
+</ul>
+</li>
+<li>アプリは<strong>インターネットに接続しなくても遊べます。</strong>架空の人物の写真はアプリに入っています。広告と、非表示にした人物の一覧のダウンロードには接続が必要です。</li>
+<li>アプリには、会員アカウント、ランキング、クラウド保存、利用者どうしのチャット、写真のアップロード、実在の人を紹介したりつないだりする機能はありません。<strong>アプリはゲームであり、実在の人物とつながることはありません。</strong></li>
+</ol>
+<h2>第5条(AIで作成した架空の人物と報告)</h2>
+<ol>
+<li>アプリに登場する人物は、すべて生成AIで作成した架空の成人です。実在の人物ではなく、芸能人やインフルエンサーなど特定の人物をモデルにしたり、似せたりしていません。このことは、最初の案内、対戦カード、結果画面、シェアするカード、ストアの説明に表示します。</li>
+<li>実在の人物に似ている画像や、不快に感じる画像があれば、[設定] &gt; [広告と報告] &gt; [画像を報告]、または図鑑の人物画面から報告できます。</li>
+<li>当社は報告を受けると、確認のうえ<strong>48時間以内に</strong>その人物をアプリで非表示にし、空いた枠を別の架空の人物で埋めます。非表示はインターネットに接続したときに反映されます。</li>
+<li>非表示にした人物が含まれていた途中の対戦や挑戦コードは開けない場合があり、その場合は新しい対戦をご案内します。</li>
+</ol>
+<h2>第6条(サービスの変更と中断)</h2>
+<ol>
+<li>当社は、企画や運営の必要に応じて、架空の人物の構成、対戦の方式、広告を表示する場所、間隔、回数などを変更することがあります。</li>
+<li>当社は、次の場合にアプリの提供の全部または一部を中断することがあります。
+<ul>
+<li>運営上の相当な理由がある場合</li>
+<li>関係法令やストアの方針が変わった場合</li>
+<li>天災、ストアや広告やホスティングの事業者の障害など、不可抗力による場合</li>
+</ul>
+</li>
+<li>サービスを終了する場合は、ストアの掲載情報またはこのページで終了予定日を事前にお知らせします。</li>
+</ol>
+<h2>第7条(アプリのデータに関する免責)</h2>
+<ol>
+<li>アプリのデータは<strong>利用者の端末の中だけに保存され</strong>、当社のサーバーにはバックアップされません。</li>
+<li>次の理由で失われたアプリのデータについて、当社は復元の義務を負いません。
+<ul>
+<li>アプリの削除、端末の設定でのデータやキャッシュの消去</li>
+<li>端末の紛失、故障、初期化、機種変更</li>
+<li>OSの再インストール、ストレージ不足、データ移行ツールが対応していない場合</li>
+</ul>
+</li>
+<li>Proはストアのアカウントに残るため、[設定]の「購入を復元」で戻せます。</li>
+<li>好みレポートと好みの一致率は楽しむためのものであり、その数値が何かを証明したり、特定の結果を保証したりするものではありません。</li>
+</ol>
+<h2>第8条(広告)</h2>
+<ol>
+<li>アプリは無償でダウンロードでき、広告収入で運営しています。</li>
+<li>対戦中と優勝の発表中は、どの広告も表示しません。アプリに表示する広告は次の5種類です。下記の間隔と回数は施行日時点のもので、第6条により変わることがあります。
+<ul>
+<li><strong>バナー広告</strong> — ホームと図鑑の画面の下にだけ表示します。</li>
+<li><strong>全画面広告</strong> — 結果画面を離れるときにだけ表示します。最初の2回を終えるまでは表示せず、2回に1回、5分に1回までで、続けて利用している間(セッション)は3回までです。</li>
+<li><strong>アプリ起動時広告</strong> — 3回以上遊んだ利用者に、アプリを開くときと2時間以上離れて戻ったときにだけ表示します。2時間に1回までです。</li>
+<li><strong>リワード広告</strong> — 利用者が64強を開くために、自分で「広告を見て1回あそぶ」を選んだときだけ表示します。</li>
+<li><strong>ネイティブ広告</strong> — Android でアプリを閉じようとしたときの確認画面の中にだけ表示します。</li>
+</ul>
+</li>
+<li>広告の内容は広告事業者が提供し、広告の商品やサービスに関することは、その広告主と利用者の間の取引です。当社は広告の内容を全年齢(G)に制限し、センシティブな広告カテゴリを除外する設定にしています。不適切な広告は[設定] &gt; [広告と報告] &gt; [広告を報告]からお知らせいただけます。</li>
+</ol>
+<h2>第9条(アプリ内商品と返金)</h2>
+<ol>
+<li>アプリ内商品はPro(<code>finalpick_pro</code>)ひとつで、1回払いの商品です(サブスクリプションではありません)。</li>
+<li>Proを購入すると、<strong>すべての広告が表示されなくなり、64強を広告なしでいつでも開けます。</strong>それ以外の機能や今後追加されるコンテンツはお約束しません。32強と今日の16強は、Proがなくても制限はありません。</li>
+<li>お支払いは Google Play の決済システムまたは Apple App Store の決済システムを通じて行われ、<strong>返金は各ストアの返金ポリシーと手続きに従います。</strong>当社がストアの代わりに決済を取り消したり返金したりすることはできません。</li>
+<li>同じストアのアカウントであれば、機種変更や再インストールのあとに[設定]の「購入を復元」でProを戻せます。</li>
+</ol>
+<h2>第10条(利用者の義務)</h2>
+<p>利用者は次の行為をしてはなりません。</p>
+<ol>
+<li>アプリの架空の人物の画像を、実在の人物であるかのように使う行為(なりすまし、偽のプロフィール、だますことなど)</li>
+<li>アプリの架空の人物の画像を営利目的で複製したり配布したりする行為、ほかのサービスの学習データとして使う行為</li>
+<li>アプリのプログラムをリバースエンジニアリング、逆コンパイル、改変する行為、メモリ改ざんや自動化ツールなどの不正な方法でアプリのデータ、広告の表示条件、Proを操作する行為</li>
+<li>アプリや広告システムの正常な動作を妨げる行為、不正な利益を得る行為</li>
+<li>当社の知的財産権や第三者の権利を侵害する行為、関係法令に違反する行為</li>
+</ol>
+<p>これらの行為によってアプリのデータが損なわれたり、正常に動作しなかったりしても当社は責任を負わず、関係法令に基づく措置をとることがあります。</p>
+<h2>第11条(知的財産権)</h2>
+<ol>
+<li>アプリに含まれる架空の人物の画像、グラフィック、効果音、音楽、テキスト、コードなど、すべてのコンテンツの権利は当社または正当な権利者に帰属します。</li>
+<li>利用者には、アプリを個人的かつ非営利の目的で利用する権利だけが与えられ、当社の事前の書面による同意なく、コンテンツを複製、配布、送信、改変、販売することはできません。</li>
+<li>アプリが作る結果のカードを個人的にシェアすること、プレイ画面を非営利で撮影や配信することは認めます。その際、カードや画面の「AI生成」の表示を消したり隠したりしないでください。</li>
+<li>アプリで使っているオープンソースソフトウェアとフォント(FinalPick Body — Pretendard JP をもとに名前を変えたサブセット、Do Hyeon、Oswald — いずれも SIL Open Font License 1.1)のライセンス全文は、[設定] &gt; [オープンソースライセンス]で確認できます。</li>
+</ol>
+<h2>第12条(紛争の解決)</h2>
+<ol>
+<li>この規約は大韓民国の法律に従って解釈され、適用されます。</li>
+<li>当社と利用者の間で紛争が起きた場合、双方は信義誠実の原則に従い、円満な解決に努めます。</li>
+<li>協議で解決しない紛争の管轄裁判所は、大韓民国の民事訴訟法に従って定めます。</li>
+</ol>
+<h2>第13条(お問い合わせ)</h2>
+<p>アプリの利用に関するお問い合わせは、下記のメールアドレスまでお寄せください。</p>
+<ul>
+<li>メール — hasegi.cs@gmail.com</li>
+<li>運営者 — Hasegi Inc. · 開発チーム</li>
+</ul>
+<footer>
+&copy; 2026 Hasegi Inc.<br>
+開発チーム &middot; お問い合わせ <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>

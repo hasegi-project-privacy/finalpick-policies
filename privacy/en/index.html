@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy | Final Pick</title>
+<style>
+:root {
+  --bench: #0A0A0A;        /* 화면 바탕 */
+  --raised: #141312;       /* 표·카드 바탕 */
+  --high: #1E1C1A;         /* 눌림·표 머리 */
+  --hairline: #2B2826;     /* 구분선 */
+  --film: #F2F2F2;         /* 본문 */
+  --film-dim: #BDB8B2;     /* 보조 글자 */
+  --caption: #9E9891;      /* 작은 안내 */
+  --tape: #FF6A13;         /* 테이프 주황 — 제목 밑줄·링크·소제목 (바탕 대비 7.0:1) */
+  --rail: #3A1D0E;         /* 레일 녹 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bench);
+  color: var(--film);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 0 18px 64px;
+  border-top: 8px solid var(--rail);
+  overflow-wrap: anywhere;
+}
+/* 한국어만 낱말 단위로 줄을 바꾼다. 일본어에 걸면 문장 부호에서만 끊겨 줄이 들쭉날쭉해진다. */
+html:lang(ko) body { word-break: keep-all; }
+main { max-width: 760px; margin: 0 auto; padding-top: 28px; }
+h1 {
+  display: inline-block;
+  font-size: 1.6rem; line-height: 1.35; letter-spacing: -0.01em;
+  margin: 4px 0 18px; padding-bottom: 4px;
+  border-bottom: 3px solid var(--tape);
+}
+h2 { font-size: 1.12rem; line-height: 1.5; margin: 44px 0 12px; }
+h2::before {
+  content: ""; display: inline-block;
+  width: 0.9em; height: 0.42em; margin-right: 0.5em;
+  border-radius: 2px;
+  background: var(--tape);
+}
+h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--tape); }
+p { margin: 0 0 14px; }
+strong { font-weight: 700; }
+a { color: var(--tape); text-decoration: underline; text-underline-offset: 3px; }
+ul, ol { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+li > ul, li > ol { margin: 8px 0 0; }
+hr { border: none; border-top: 1px solid var(--hairline); margin: 32px 0; }
+code {
+  background: var(--high); color: var(--film);
+  padding: 1px 6px; border-radius: 3px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+.tw {
+  overflow-x: auto; margin: 0 0 22px;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 0.9rem; }
+th, td {
+  padding: 9px 12px; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--hairline); border-right: 1px solid var(--hairline);
+}
+th:last-child, td:last-child { border-right: none; }
+tbody tr:last-child td { border-bottom: none; }
+th { background: var(--high); font-weight: 700; white-space: nowrap; }
+.meta { color: var(--film-dim); font-size: 0.9rem; margin: 0 0 4px; }
+.langbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+.langbar a, .langbar span {
+  font-size: 0.85rem; line-height: 1.4; padding: 10px 14px; min-height: 44px; display: inline-flex; align-items: center;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised); color: var(--film); text-decoration: none;
+}
+.langbar .on { background: var(--tape); color: var(--bench); border-color: var(--tape); font-weight: 700; }
+.langbar .hop { margin-left: auto; border-style: dashed; }
+.langbar a:hover, .langbar a:focus { background: var(--high); }
+.cards { list-style: none; padding: 0; margin: 8px 0 0; }
+.cards li { margin: 0 0 14px; }
+.cards a {
+  display: block; padding: 14px 18px;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised);
+  color: var(--film); text-decoration: none;
+}
+.cards a:hover, .cards a:focus { background: var(--high); }
+.cards .t { font-weight: 700; }
+.cards .d { color: var(--film-dim); font-size: 0.85rem; }
+footer {
+  margin-top: 56px; padding-top: 18px; border-top: 2px dashed var(--hairline);
+  text-align: center; color: var(--caption); font-size: 0.8rem; line-height: 2;
+}
+@media (max-width: 480px) {
+  body { font-size: 15px; padding: 0 14px 56px; }
+  h1 { font-size: 1.38rem; }
+  .langbar .hop { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<nav class="langbar"><a href="../" lang="ko">한국어</a><span class="on">English</span><a href="../ja/" lang="ja">日本語</a><a class="hop" href="../../terms/en/">Terms of Service &rarr;</a></nav>
+<h1>Privacy Policy</h1>
+<p><strong>Final Pick: Ideal Type Bracket</strong> (<code>com.hasegi.finalpick</code>)</p>
+<ul>
+<li>Effective date: November 17, 2026</li>
+<li>Last updated: November 17, 2026</li>
+</ul>
+<p>Hasegi Inc. ("we", "the Company") complies with applicable data protection laws, including the Personal Information Protection Act of the Republic of Korea, and publishes this Privacy Policy to explain how information is handled in the app.</p>
+<p><strong>Final Pick has no sign-up, no login and no server accounts.</strong> We do not receive or store information that identifies you through the app, and there is no field anywhere in the app for your name or email. Everyone shown in the app is a fictional adult created with generative AI, and there is no feature for uploading your own photos.</p>
+<hr>
+<h2>1. Information We Handle</h2>
+<h3>1.1 Information stored only on your device (never sent to us)</h3>
+<p>So that you can pick up where you left off, the following is stored in your device's app storage (SharedPreferences and the app's private folder). <strong>It is not sent to our servers and we cannot see it.</strong></p>
+<div class="tw"><table><thead><tr><th>Category</th><th>Stored items</th></tr></thead><tbody><tr><td>Progress</td><td>A stopped bracket (to resume), the candidate group you chose, the date and result of Today's 16</td></tr><tr><td>Records</td><td>People pinned in your Collection, how often you picked each person and their recent wins, Round of 64 challenges already played</td></tr><tr><td>Settings</td><td>Sound effects, music and vibration, music volume, motion level, language, daily reminder on/off and time, whether you saw the first-launch notice</td></tr><tr><td>Pro</td><td>Whether Pro (<code>finalpick_pro</code>) was purchased or restored on this device</td></tr><tr><td>Ad pacing</td><td>Number of completed brackets, when full-screen and app open ads were last shown and how many times, used to keep the ad intervals</td></tr><tr><td>Rating prompt</td><td>When we asked for a store rating and your answer</td></tr></tbody></table></div>
+<ul>
+<li>We do <strong>not</strong> collect information that identifies you through the app, such as your name, email, phone number, date of birth, address, location, contacts, photos or voice.</li>
+<li>The taste report and taste match are calculated on your device; your picks are not sent anywhere.</li>
+<li>A friend challenge code is a short string containing only bracket information (mode, group and picks). It leaves the app only when you tap Share, and only to the app you choose.</li>
+<li>Deleting the app deletes all of the above from your device. No backup or recovery is provided.</li>
+</ul>
+<h3>1.2 Information collected automatically by the ad service</h3>
+<p>Final Pick shows Google AdMob ads (banner, interstitial, app open, rewarded and native). In the European Economic Area, the UK, Switzerland and similar regions, ad consent is collected with Google's consent tool (UMP). In the course of serving ads, <strong>Google LLC collects and processes the following directly</strong>:</p>
+<ul>
+<li>Advertising identifier (Android Advertising ID (AAID) / iOS Identifier for Advertisers (IDFA))</li>
+<li>Device information (model, OS version, language and region settings, screen information)</li>
+<li>Network information (approximate location at country or region level estimated from the IP address)</li>
+<li>Ad interactions such as impressions and clicks, and your consent status</li>
+</ul>
+<p>We do not collect or store this information ourselves; it is handled under the ad provider's privacy policy.</p>
+<h3>1.3 In-app purchase information</h3>
+<p>Payment for Pro (<code>finalpick_pro</code>, a one-time purchase) is processed <strong>only through Google Play Billing or the Apple App Store (StoreKit)</strong>.</p>
+<ul>
+<li>Payment details such as card or bank information are handled by each store; we have no access to them.</li>
+<li>The app turns Pro on using the purchase confirmation the store sends to your device, and stores only the result on the device. It is not sent to our servers.</li>
+<li>In the store consoles we can see only aggregate statistics such as sales counts and amounts by country.</li>
+</ul>
+<h3>1.4 Static file downloads (Cloudflare)</h3>
+<p>About once a day, the app downloads public static files, such as the list of hidden people, from <code>hasegi-finalpick.pages.dev</code> (Cloudflare Pages). Opening a friend challenge link shows a guide page at the same address.</p>
+<ul>
+<li>As with any internet request, these requests carry your IP address and basic device or browser information, which Cloudflare, Inc. processes for delivery and security.</li>
+<li>We do not collect identifying information from these requests and do not keep access logs.</li>
+<li>If there is no connection or the request fails, the app uses the list bundled inside it.</li>
+<li>On Android, if you installed the app from a challenge link, the app reads only the challenge code from the Google Play Install Referrer to fill in the code field. This value does not leave your device.</li>
+</ul>
+<h3>1.5 Emails you send (reports and inquiries)</h3>
+<p>Report image (in Settings or Collection) and Report an ad (in Settings) open your email app. You can also write to the address below directly. <strong>Only if you actually send an email</strong> do we receive:</p>
+<ul>
+<li>Your email address, what you wrote (such as the person number and reason), and the app version and device information if you include them</li>
+</ul>
+<h3>1.6 Information we do not collect</h3>
+<ul>
+<li>Location (GPS), camera, microphone, contacts, photo or media storage, call or message logs</li>
+<li>Account information, nicknames, user-generated content such as uploaded photos, chat content</li>
+<li>The app contains no separate analytics or crash collection tools.</li>
+<li>Reminders are local notifications scheduled on your device; no notification token is sent to a server. Notification permission is requested only for the daily reminder.</li>
+</ul>
+<hr>
+<h2>2. Purposes of Use</h2>
+<div class="tw"><table><thead><tr><th>Information</th><th>Purpose</th></tr></thead><tbody><tr><td>Information stored on your device (1.1)</td><td>Resuming, keeping your Collection, records and settings, keeping Pro, ad pacing</td></tr><tr><td>Advertising identifier and device information (1.2)</td><td>Serving ads, frequency control, personalized ads (where you consent), fraud prevention</td></tr><tr><td>Purchase confirmation (1.3)</td><td>Providing and restoring Pro</td></tr><tr><td>Static file requests (1.4)</td><td>Removing hidden people from the app, challenge link guide</td></tr><tr><td>Emails (1.5)</td><td>Reviewing reports, replacing or hiding images, answering inquiries</td></tr></tbody></table></div>
+<p>We do not use information for any other purpose, and we do not identify or profile users.</p>
+<hr>
+<h2>3. Retention</h2>
+<ul>
+<li><strong>Information stored on your device</strong>: kept on your device until you delete the app or clear its data in device settings. We keep no copy.</li>
+<li><strong>Advertising information</strong>: according to Google LLC's retention policy.</li>
+<li><strong>Static file requests</strong>: according to Cloudflare, Inc.'s retention policy. We keep none.</li>
+<li><strong>Report and inquiry emails</strong>: deleted within one year after we have answered and handled them. Our hiding log keeps only the person number, date and reason, not your email address. Where the law requires longer retention, we follow that period.</li>
+</ul>
+<hr>
+<h2>4. Third Parties and Processors</h2>
+<p>We do not sell or rent your personal information. We use the following providers' SDKs and platforms to provide the service.</p>
+<div class="tw"><table><thead><tr><th>Provider</th><th>Information</th><th>Purpose</th><th>Retention</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google LLC (AdMob, UMP)</td><td>Advertising identifier, device and network information, ad interactions, consent status</td><td>Serving and measuring ads, managing ad consent</td><td>Per provider policy</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></td></tr><tr><td>Cloudflare, Inc. (Pages)</td><td>IP address, basic device or browser information</td><td>Delivering static files, security</td><td>Per provider policy</td><td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">https://www.cloudflare.com/privacypolicy/</a></td></tr><tr><td>Apple Inc. / Google LLC (store payments)</td><td>Payment information (handled by the store directly)</td><td>Pro purchase and restore</td><td>Per provider policy</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a> , <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></td></tr></tbody></table></div>
+<ul>
+<li>These providers operate servers in the United States and other countries, so information may be transferred abroad. The items, purposes and retention are as in the table above and follow each provider's policy.</li>
+<li>Otherwise, information may be provided only where required by law or by a lawful request from investigative authorities.</li>
+</ul>
+<hr>
+<h2>5. Your Rights and How to Exercise Them</h2>
+<h3>5.1 App data</h3>
+<p>You control the app data on your device. You can delete all of it at any time by deleting the app or clearing its data in device settings; deleted data cannot be recovered. Pro stays with your store account and can be brought back with Restore purchases in Settings.</p>
+<h3>5.2 Opting out of personalized ads and resetting the advertising identifier</h3>
+<ul>
+<li><strong>Android</strong>: Settings &gt; Google &gt; Ads &gt; "Delete advertising ID" or "Opt out of Ads Personalization"</li>
+<li><strong>iOS</strong>: Settings &gt; Privacy &amp; Security &gt; Tracking &gt; turn off "Allow Apps to Request to Track"</li>
+<li><strong>In the app</strong>: Settings &gt; Ads &amp; reports &gt; Ad privacy choices (in regions where consent is collected, you can change it here)</li>
+</ul>
+<p>On iOS, the app asks for <strong>tracking permission (App Tracking Transparency)</strong> before using the advertising identifier, and turns on ads only after you answer. If you decline, every feature works the same and you see non-personalized ads.</p>
+<h3>5.3 Ads and your choices</h3>
+<p>No ads are shown during a bracket or the winner reveal. Rewarded ads are shown only when you choose to watch one to open the Round of 64. Where and how often ads appear is described in Article 8 of the Terms of Service. With Pro, no ads are shown.</p>
+<h3>5.4 Age</h3>
+<ul>
+<li>Final Pick is <strong>an app for adults aged 18 and over</strong>. On Google Play the target audience is declared as 18 and over, and the app does not take part in the Families program.</li>
+<li>Ad requests do not use the child-directed tag, and ad content is limited to rating G.</li>
+<li>We do not knowingly collect personal information from children under 14 without consent from a legal guardian. If we learn we have received such information (for example, by email), we delete it without delay.</li>
+</ul>
+<h3>5.5 Contact</h3>
+<p>You may request access, correction, deletion or suspension of processing at any time by emailing the address below. We reply within 10 days of receipt.</p>
+<hr>
+<h2>6. Security Measures</h2>
+<ul>
+<li><strong>Data minimization</strong>: we do not collect information that is not essential to the service. Progress and records stay on your device and are not sent to a server.</li>
+<li><strong>Protection in transit</strong>: ads and static file downloads use encrypted (HTTPS/TLS) connections.</li>
+<li><strong>Access control</strong>: we run no user database. Report and inquiry emails are read only by the person in charge.</li>
+<li><strong>Keeping up to date</strong>: we apply security updates to the SDKs we use.</li>
+</ul>
+<hr>
+<h2>7. Privacy Officer</h2>
+<ul>
+<li>Contact — Hasegi Inc. · Development</li>
+<li>Email — hasegi.cs@gmail.com</li>
+</ul>
+<p>Please send questions, complaints or requests for remedies about privacy to the contact above.</p>
+<hr>
+<h2>8. Remedies for Infringement</h2>
+<p>If you need to report or seek advice about a privacy infringement, you may also contact the following Korean authorities.</p>
+<div class="tw"><table><thead><tr><th>Organization</th><th>Phone</th><th>Website</th></tr></thead><tbody><tr><td>Personal Information Dispute Mediation Committee</td><td>1833-6972 (in Korea)</td><td>kopico.go.kr</td></tr><tr><td>Personal Information Infringement Report Center (KISA)</td><td>118 (in Korea)</td><td>privacy.kisa.or.kr</td></tr><tr><td>Supreme Prosecutors' Office Cyber Crime Investigation</td><td>1301 (in Korea)</td><td>spo.go.kr</td></tr><tr><td>Korean National Police Agency Cyber Bureau</td><td>182 (in Korea)</td><td>ecrm.cyber.go.kr</td></tr></tbody></table></div>
+<hr>
+<h2>9. Changes to This Policy</h2>
+<p>This Privacy Policy may be revised when laws, policies or the service change. We will post the changes and the effective date on this page, and announce significant changes that are unfavorable to users at least 7 days before they take effect.</p>
+<footer>
+&copy; 2026 Hasegi Inc.<br>
+Development &middot; Contact <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>

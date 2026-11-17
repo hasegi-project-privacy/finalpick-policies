@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="robots" content="index, follow">
+<title>プライバシーポリシー | ファイナルピック</title>
+<style>
+:root {
+  --bench: #0A0A0A;        /* 화면 바탕 */
+  --raised: #141312;       /* 표·카드 바탕 */
+  --high: #1E1C1A;         /* 눌림·표 머리 */
+  --hairline: #2B2826;     /* 구분선 */
+  --film: #F2F2F2;         /* 본문 */
+  --film-dim: #BDB8B2;     /* 보조 글자 */
+  --caption: #9E9891;      /* 작은 안내 */
+  --tape: #FF6A13;         /* 테이프 주황 — 제목 밑줄·링크·소제목 (바탕 대비 7.0:1) */
+  --rail: #3A1D0E;         /* 레일 녹 */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bench);
+  color: var(--film);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 0 18px 64px;
+  border-top: 8px solid var(--rail);
+  overflow-wrap: anywhere;
+}
+/* 한국어만 낱말 단위로 줄을 바꾼다. 일본어에 걸면 문장 부호에서만 끊겨 줄이 들쭉날쭉해진다. */
+html:lang(ko) body { word-break: keep-all; }
+main { max-width: 760px; margin: 0 auto; padding-top: 28px; }
+h1 {
+  display: inline-block;
+  font-size: 1.6rem; line-height: 1.35; letter-spacing: -0.01em;
+  margin: 4px 0 18px; padding-bottom: 4px;
+  border-bottom: 3px solid var(--tape);
+}
+h2 { font-size: 1.12rem; line-height: 1.5; margin: 44px 0 12px; }
+h2::before {
+  content: ""; display: inline-block;
+  width: 0.9em; height: 0.42em; margin-right: 0.5em;
+  border-radius: 2px;
+  background: var(--tape);
+}
+h3 { font-size: 1rem; margin: 26px 0 8px; color: var(--tape); }
+p { margin: 0 0 14px; }
+strong { font-weight: 700; }
+a { color: var(--tape); text-decoration: underline; text-underline-offset: 3px; }
+ul, ol { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+li > ul, li > ol { margin: 8px 0 0; }
+hr { border: none; border-top: 1px solid var(--hairline); margin: 32px 0; }
+code {
+  background: var(--high); color: var(--film);
+  padding: 1px 6px; border-radius: 3px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+.tw {
+  overflow-x: auto; margin: 0 0 22px;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised);
+  -webkit-overflow-scrolling: touch;
+}
+table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 0.9rem; }
+th, td {
+  padding: 9px 12px; text-align: left; vertical-align: top;
+  border-bottom: 1px solid var(--hairline); border-right: 1px solid var(--hairline);
+}
+th:last-child, td:last-child { border-right: none; }
+tbody tr:last-child td { border-bottom: none; }
+th { background: var(--high); font-weight: 700; white-space: nowrap; }
+.meta { color: var(--film-dim); font-size: 0.9rem; margin: 0 0 4px; }
+.langbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+.langbar a, .langbar span {
+  font-size: 0.85rem; line-height: 1.4; padding: 10px 14px; min-height: 44px; display: inline-flex; align-items: center;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised); color: var(--film); text-decoration: none;
+}
+.langbar .on { background: var(--tape); color: var(--bench); border-color: var(--tape); font-weight: 700; }
+.langbar .hop { margin-left: auto; border-style: dashed; }
+.langbar a:hover, .langbar a:focus { background: var(--high); }
+.cards { list-style: none; padding: 0; margin: 8px 0 0; }
+.cards li { margin: 0 0 14px; }
+.cards a {
+  display: block; padding: 14px 18px;
+  border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--raised);
+  color: var(--film); text-decoration: none;
+}
+.cards a:hover, .cards a:focus { background: var(--high); }
+.cards .t { font-weight: 700; }
+.cards .d { color: var(--film-dim); font-size: 0.85rem; }
+footer {
+  margin-top: 56px; padding-top: 18px; border-top: 2px dashed var(--hairline);
+  text-align: center; color: var(--caption); font-size: 0.8rem; line-height: 2;
+}
+@media (max-width: 480px) {
+  body { font-size: 15px; padding: 0 14px 56px; }
+  h1 { font-size: 1.38rem; }
+  .langbar .hop { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<nav class="langbar"><a href="../" lang="ko">한국어</a><a href="../en/" lang="en">English</a><span class="on">日本語</span><a class="hop" href="../../terms/ja/">利用規約 &rarr;</a></nav>
+<h1>プライバシーポリシー</h1>
+<p><strong>ファイナルピック：理想のタイプトーナメント</strong> (<code>com.hasegi.finalpick</code>)</p>
+<ul>
+<li>施行日: 2026年11月17日</li>
+<li>最終改定日: 2026年11月17日</li>
+</ul>
+<p>Hasegi Inc.(以下「当社」)は、大韓民国「個人情報保護法」をはじめとする関係法令を遵守し、利用者の情報を保護するため、次のとおりプライバシーポリシーを定めて公開します。</p>
+<p><strong>ファイナルピックには、会員登録・ログイン・サーバーのアカウントがありません。</strong> 当社は、アプリを通じて利用者を識別できる情報をサーバーで受け取ったり保存したりしません。お名前やメールアドレスを入力する欄も、アプリのどこにもありません。アプリに登場する人物はすべて生成AIで作成した架空の成人で、利用者が写真をアップロードする機能はありません。</p>
+<hr>
+<h2>1. 取り扱う情報</h2>
+<h3>1.1 端末の中だけに保存される情報(当社には送信されません)</h3>
+<p>続きから遊べるように、次の情報を利用者の端末のアプリ用ストレージ(SharedPreferences、アプリ専用フォルダ)に保存します。これらの情報は<strong>当社のサーバーに送信されず、当社が見ることはできません。</strong></p>
+<div class="tw"><table><thead><tr><th>区分</th><th>保存する項目</th></tr></thead><tbody><tr><td>進行</td><td>途中でやめた対戦(続きから)、選んだ候補の性別、今日の16強を終えた日付と結果</td></tr><tr><td>記録</td><td>図鑑に並んだ人物、人物ごとの選んだ回数と最近の優勝、すでに遊んだ64強の挑戦状</td></tr><tr><td>設定</td><td>効果音、BGM、振動、BGMの音量、動きの量、言語、お知らせのオン/オフと時刻、最初の案内を見たかどうか</td></tr><tr><td>Pro</td><td>この端末でPro(<code>finalpick_pro</code>)を購入または復元したかどうか</td></tr><tr><td>広告の間隔</td><td>終えた回数、全画面広告とアプリ起動時広告を最後に表示した時刻と回数など、広告の間隔を守るための値</td></tr><tr><td>評価のお願い</td><td>ストア評価をお願いした時刻とお返事</td></tr></tbody></table></div>
+<ul>
+<li>お名前、メールアドレス、電話番号、生年月日、住所、位置情報、連絡先、写真、音声など、<strong>個人を識別できる情報をアプリで収集することはありません。</strong></li>
+<li>好みレポートと好みの一致率は端末の中で計算し、選んだ結果を外部に送りません。</li>
+<li>友だちへの挑戦コードは、対戦の情報(モード、性別、選んだ側)だけを含む短い文字列です。利用者がシェアを押したときだけ、利用者が選んだアプリに渡されます。</li>
+<li>アプリを削除すると、上記の情報は端末から一緒に削除されます。バックアップや復元の手段はありません。</li>
+</ul>
+<h3>1.2 広告サービスが自動的に収集する情報</h3>
+<p>ファイナルピックは Google AdMob の広告(バナー、全画面、アプリ起動時、リワード、ネイティブ)を表示し、欧州経済領域、英国、スイスなどでは Google の同意管理ツール(UMP)で広告への同意をいただきます。広告の表示にあたり、<strong>Google LLC が直接</strong>次の情報を収集・処理します。</p>
+<ul>
+<li>広告識別子(Android 広告ID(AAID) / iOS 広告識別子(IDFA))</li>
+<li>端末情報(機種、OSバージョン、言語と地域の設定、画面情報)</li>
+<li>ネットワーク情報(IPアドレスから推定したおおよその位置 — 国や地域のレベル)</li>
+<li>広告の表示やクリックなどの記録、広告への同意の状態</li>
+</ul>
+<p>当社はこれらの情報を直接収集したり保存したりせず、広告事業者のプライバシーポリシーに従って取り扱われます。</p>
+<h3>1.3 アプリ内課金の情報</h3>
+<p>Pro(<code>finalpick_pro</code>、1回払いの商品)のお支払いは、<strong>Google Play の決済システムまたは Apple App Store(StoreKit)を通じてのみ</strong>行われます。</p>
+<ul>
+<li>カード番号や口座情報などの支払い手段の情報は各ストアが取り扱い、当社は見ることができません。</li>
+<li>アプリは、ストアが端末に送る購入確認の情報でProを有効にし、その結果だけを端末に保存します。当社のサーバーには送りません。</li>
+<li>当社がストアの管理画面で見られるのは、国別の販売数や金額などの統計だけです。</li>
+</ul>
+<h3>1.4 静的ファイルのダウンロード(Cloudflare)</h3>
+<p>アプリは1日に1回ほど、非表示にした人物の一覧などの公開された静的ファイルを <code>hasegi-finalpick.pages.dev</code>(Cloudflare Pages)からダウンロードします。友だちの挑戦状リンクを開くと、同じアドレスの案内ページが表示されます。</p>
+<ul>
+<li>この通信には、一般的なインターネット通信と同じく、IPアドレスや端末とブラウザの基本情報が含まれ、Cloudflare, Inc. が配信とセキュリティのために処理します。</li>
+<li>当社はこの通信から利用者を識別する情報を集めず、アクセス記録を別に保存しません。</li>
+<li>接続がない場合や失敗した場合は、アプリに入っている一覧をそのまま使います。</li>
+<li>Android で挑戦状リンクからアプリを初めてインストールした場合、アプリは Google Play のインストールリファラから挑戦コードだけを読み取って入力欄に入れます。この値は端末の外に送りません。</li>
+</ul>
+<h3>1.5 利用者が送るメール(報告とお問い合わせ)</h3>
+<p>設定や図鑑の「画像を報告」、設定の「広告を報告」を押すと、利用者のメールアプリが開きます。下記のアドレスに直接お問い合わせいただくこともできます。利用者が<strong>実際にメールを送った場合に限り</strong>、当社は次の情報を受け取ります。</p>
+<ul>
+<li>送信者のメールアドレス、メールに書かれた内容(報告した人物の番号、理由など)、利用者が書いた場合はアプリのバージョンと端末の情報</li>
+</ul>
+<h3>1.6 収集しない情報</h3>
+<ul>
+<li>位置情報(GPS)、カメラ、マイク、連絡先、写真やメディアのストレージ、通話やメッセージの記録</li>
+<li>会員アカウントの情報、ニックネーム、利用者がアップロードした写真などのユーザー生成コンテンツ(UGC)、チャットの内容</li>
+<li>利用状況の分析ツールやクラッシュ収集ツールは入っていません。</li>
+<li>お知らせは端末の中で予約するローカル通知で、通知トークンをサーバーに送りません。通知の許可は毎日のお知らせのためだけにお願いします。</li>
+</ul>
+<hr>
+<h2>2. 利用目的</h2>
+<div class="tw"><table><thead><tr><th>情報</th><th>利用目的</th></tr></thead><tbody><tr><td>端末に保存する情報(1.1)</td><td>続きから遊ぶこと、図鑑と記録と設定の保持、Proの保持、広告の間隔の調整</td></tr><tr><td>広告識別子と端末情報(1.2)</td><td>広告の表示、表示回数の調整、パーソナライズ広告(同意した場合)、不正クリックの防止</td></tr><tr><td>購入確認の情報(1.3)</td><td>Proの提供と購入の復元</td></tr><tr><td>静的ファイルの通信(1.4)</td><td>非表示にした人物をアプリから外すこと、挑戦状リンクの案内</td></tr><tr><td>メール(1.5)</td><td>報告の確認と画像の差し替えや非表示、お問い合わせへの返信</td></tr></tbody></table></div>
+<p>当社は上記以外の目的で情報を利用せず、利用者を識別したりプロファイリングしたりしません。</p>
+<hr>
+<h2>3. 保存期間</h2>
+<ul>
+<li><strong>端末に保存する情報</strong>: 利用者がアプリを削除するか、端末の設定でアプリのデータを消去するまで端末に残ります。当社が持つ写しはありません。</li>
+<li><strong>広告に関する情報</strong>: Google LLC の保存方針に従います。</li>
+<li><strong>静的ファイルの通信</strong>: Cloudflare, Inc. の保存方針に従います。当社は別に保存しません。</li>
+<li><strong>報告とお問い合わせのメール</strong>: 返信と対応を終えてから1年以内に削除します。非表示の記録には、人物の番号、日付、理由だけを残し、メールアドレスは残しません。法令で保存が求められる場合はその期間に従います。</li>
+</ul>
+<hr>
+<h2>4. 第三者への提供と処理の委託</h2>
+<p>当社は、利用者の個人情報を第三者に販売したり貸したりしません。サービスを提供するため、次の事業者のSDKやプラットフォームを利用します。</p>
+<div class="tw"><table><thead><tr><th>事業者</th><th>提供される情報</th><th>目的</th><th>保存期間</th><th>プライバシーポリシー</th></tr></thead><tbody><tr><td>Google LLC (AdMob, UMP)</td><td>広告識別子、端末とネットワークの情報、広告の記録、同意の状態</td><td>広告の表示と測定、広告への同意の管理</td><td>事業者の方針による</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></td></tr><tr><td>Cloudflare, Inc. (Pages)</td><td>IPアドレス、端末とブラウザの基本情報</td><td>静的ファイルの配信、セキュリティ</td><td>事業者の方針による</td><td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">https://www.cloudflare.com/privacypolicy/</a></td></tr><tr><td>Apple Inc. / Google LLC (ストア決済)</td><td>支払いの情報(ストアが直接取り扱う)</td><td>Proの購入と復元</td><td>事業者の方針による</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a> , <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></td></tr></tbody></table></div>
+<ul>
+<li>これらの事業者はアメリカなど国外にサーバーを置いているため、情報が国外に移転されることがあります。移転される項目、目的、保存期間は上の表のとおりで、各事業者の方針に従います。</li>
+<li>このほか、法令に基づく場合や捜査機関から適法な手続きによる求めがあった場合に限り、情報を提供することがあります。</li>
+</ul>
+<hr>
+<h2>5. 利用者の権利と行使の方法</h2>
+<h3>5.1 アプリのデータ</h3>
+<p>端末に保存されたアプリのデータは、利用者ご自身で管理できます。アプリを削除するか、端末の設定でアプリのデータを消去すれば、いつでもすべて削除できます。削除したデータは元に戻せません。Proはストアのアカウントに残るので、設定の「購入を復元」で戻せます。</p>
+<h3>5.2 パーソナライズ広告の停止と広告識別子のリセット</h3>
+<ul>
+<li><strong>Android</strong>: 設定 &gt; Google &gt; 広告 &gt; 「広告IDを削除」または「広告のカスタマイズをオプトアウト」</li>
+<li><strong>iOS</strong>: 設定 &gt; プライバシーとセキュリティ &gt; トラッキング &gt; 「Appからのトラッキング要求を許可」をオフ</li>
+<li><strong>アプリの中</strong>: 設定 &gt; 広告と報告 &gt; 広告のプライバシー設定(同意をいただく地域では、ここで変更できます)</li>
+</ul>
+<p>iOS では、アプリが広告識別子を使う前に<strong>トラッキングの許可(App Tracking Transparency)</strong>をおたずねし、お答えいただいたあとでだけ広告を有効にします。許可しない場合も、すべての機能を同じように使え、パーソナライズされていない広告が表示されます。</p>
+<h3>5.3 広告の表示と利用者の選択</h3>
+<p>対戦中と優勝の発表中には広告を表示しません。リワード広告は、利用者が64強を開くために自分で選んだときだけ表示されます。広告が表示される場所と間隔は、利用規約の第8条に書いてあります。Proを購入すると広告は表示されません。</p>
+<h3>5.4 年齢</h3>
+<ul>
+<li>ファイナルピックは<strong>18歳以上の成人のためのアプリ</strong>です。Google Play の対象年齢は18歳以上で申告し、ファミリー向けプログラムには参加しません。</li>
+<li>広告のリクエストに子ども向けのタグは使わず、広告の内容は全年齢(G)に制限しています。</li>
+<li>当社は、法定代理人の同意なく14歳未満のお子様の個人情報を収集しません。そのような情報(メールなど)を受け取ったと分かった場合は、すぐに削除します。</li>
+</ul>
+<h3>5.5 お問い合わせ</h3>
+<p>下記のメールアドレスで、いつでも開示、訂正、削除、処理の停止を求めることができます。受け付けた日から10日以内にお返事します。</p>
+<hr>
+<h2>6. 安全管理のための措置</h2>
+<ul>
+<li><strong>最小限の収集</strong>: サービスに欠かせない情報以外は、はじめから収集しません。進行と記録はサーバーに送らず、端末の中だけに保存します。</li>
+<li><strong>通信の保護</strong>: 広告と静的ファイルのダウンロードには、暗号化(HTTPS/TLS)された通信を使います。</li>
+<li><strong>アクセスの管理</strong>: 当社は利用者のデータベースを運用していません。報告とお問い合わせのメールは担当者だけが読みます。</li>
+<li><strong>最新の状態の維持</strong>: 利用しているSDKのセキュリティ更新を継続して反映します。</li>
+</ul>
+<hr>
+<h2>7. 個人情報保護の責任者</h2>
+<ul>
+<li>担当 — Hasegi Inc. · 開発チーム</li>
+<li>メール — hasegi.cs@gmail.com</li>
+</ul>
+<p>個人情報の取り扱いに関するお問い合わせ、苦情、被害の救済は、上記の連絡先までお寄せください。</p>
+<hr>
+<h2>8. 権利侵害の救済方法</h2>
+<p>個人情報の侵害について届け出や相談が必要な場合は、次の韓国の機関にもお問い合わせいただけます。</p>
+<div class="tw"><table><thead><tr><th>機関</th><th>電話</th><th>ウェブサイト</th></tr></thead><tbody><tr><td>個人情報紛争調停委員会</td><td>1833-6972(韓国国内)</td><td>kopico.go.kr</td></tr><tr><td>個人情報侵害申告センター (KISA)</td><td>118(韓国国内)</td><td>privacy.kisa.or.kr</td></tr><tr><td>大検察庁 サイバー犯罪捜査団</td><td>1301(韓国国内)</td><td>spo.go.kr</td></tr><tr><td>警察庁 サイバー捜査局</td><td>182(韓国国内)</td><td>ecrm.cyber.go.kr</td></tr></tbody></table></div>
+<hr>
+<h2>9. ポリシーの変更</h2>
+<p>このプライバシーポリシーは、法令や方針、サービスの内容の変更に合わせて改定することがあります。改定するときは、このページで内容と施行日をお知らせし、利用者に不利な重要な変更は施行の7日前からお知らせします。</p>
+<footer>
+&copy; 2026 Hasegi Inc.<br>
+開発チーム &middot; お問い合わせ <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>
